@@ -1,0 +1,9 @@
+¹¥»÷Ê±·À»ðÇ½ÉèÖÃ£º
+ iptables -A OUTPUT -p tcp --tcp-flags RST RST -d 1.1.1.1 -j DROP
+
+»Ö¸´£º
+iptables -L OUTPUT --line-numbers
+
+iptables -D OUTPUT  <numbers>
+
+iptables -D OUTPUT -p tcp --tcp-flags RST RST -d 1.1.1.1 -j DROP
